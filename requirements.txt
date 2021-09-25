@@ -1,1 +1,4 @@
 google-cloud-talent
+beautifulsoup4
+requests
+pymysql

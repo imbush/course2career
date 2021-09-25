@@ -26,7 +26,7 @@ def createCourseJSON(roster: str, subjectsDict: dict) -> dict:
         for course in parsedCourses:
             if not subjectsDict.get(subject).get(course["catalogNbr"]):
                 parsedCourse = dict()
-                attrToKeep = ["subject", "titleLong", "catalogNbr", "description", "acadCareer"]
+                attrToKeep = ["subject", "titleLong", "catalogNbr", "description", "acadCareer", "catalogPrereqCoreq"]
                 for attr in attrToKeep:
                     parsedCourse[attr] = course[attr]
                 parsedCourse["rosterURL"] = ("https://classes.cornell.edu/browse/roster/"+ roster + 

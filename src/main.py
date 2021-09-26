@@ -86,48 +86,49 @@ def getLevel(course: dict) -> int:
 
 
 if __name__ == "__main__":
-    subjectsDict = dict()
-    rosters = ["SP19", "SU19", "FA19", "WI19", "SP20", "SU20", "FA20", "WI20", "SP21", "SU21", "FA21", "WI21"]
-    for roster in rosters:
-        createCourseJSON(roster, subjectsDict)
+    pass
+    # subjectsDict = dict()
+    # rosters = ["SP19", "SU19", "FA19", "WI19", "SP20", "SU20", "FA20", "WI20", "SP21", "SU21", "FA21", "WI21"]
+    # for roster in rosters:
+    #     createCourseJSON(roster, subjectsDict)
 
-    with open("courses.json", 'w') as outJSON:
-        outJSON.truncate(0)
-        json.dump(subjectsDict, outJSON, indent=4)
+    # with open("courses.json", 'w') as outJSON:
+    #     outJSON.truncate(0)
+    #     json.dump(subjectsDict, outJSON, indent=4)
 
-    # Create title keyword extractor
-    max_ngram_size = 2
-    deduplication_threshold = 0.9
-    numOfKeywords = 2
-    titleKwExtractor = yake.KeywordExtractor(lan="en", n=max_ngram_size, dedupLim=deduplication_threshold, top=numOfKeywords, features=None)
+    # # Create title keyword extractor
+    # max_ngram_size = 2
+    # deduplication_threshold = 0.9
+    # numOfKeywords = 2
+    # titleKwExtractor = yake.KeywordExtractor(lan="en", n=max_ngram_size, dedupLim=deduplication_threshold, top=numOfKeywords, features=None)
     
-    # Create description keyword extractor
-    max_ngram_size = 2
-    deduplication_threshold = 0.3
-    numOfKeywords = 10
-    descrKwExtractor = yake.KeywordExtractor(lan="en", n=max_ngram_size, dedupLim=deduplication_threshold, top=numOfKeywords, features=None)
+    # # Create description keyword extractor
+    # max_ngram_size = 2
+    # deduplication_threshold = 0.3
+    # numOfKeywords = 10
+    # descrKwExtractor = yake.KeywordExtractor(lan="en", n=max_ngram_size, dedupLim=deduplication_threshold, top=numOfKeywords, features=None)
     
-    with open("courses.json", "r") as inJSON:
-        subjects = json.load(inJSON)
+    # with open("courses.json", "r") as inJSON:
+    #     subjects = json.load(inJSON)
 
-    # subject = "CS"
-    # descrFormal = subjects[subject]["descrformal"]
-    # for courseName in subjects[subject]["courses"]:
-    #     course = subjects[subject]["courses"][courseName]
-    #     print(courseName, course)
-    #     addKeywordsLevel(course, descrFormal, titleKwExtractor, descrKwExtractor)
-    # print("Keywords complete for", subject)
+    # # subject = "CS"
+    # # descrFormal = subjects[subject]["descrformal"]
+    # # for courseName in subjects[subject]["courses"]:
+    # #     course = subjects[subject]["courses"][courseName]
+    # #     print(courseName, course)
+    # #     addKeywordsLevel(course, descrFormal, titleKwExtractor, descrKwExtractor)
+    # # print("Keywords complete for", subject)
 
-    for subject in subjects:
-        try:
-            descrFormal = subjects[subject]["descrformal"]
-            for courseName in subjects[subject]["courses"]:
-                course = subjects[subject]["courses"][courseName]
-                addKeywordsLevel(course, descrFormal, titleKwExtractor, descrKwExtractor)
-            print("Keywords complete for", subject)
-        except:
-            print("Unable to do keyword analysis in", subject)
+    # for subject in subjects:
+    #     try:
+    #         descrFormal = subjects[subject]["descrformal"]
+    #         for courseName in subjects[subject]["courses"]:
+    #             course = subjects[subject]["courses"][courseName]
+    #             addKeywordsLevel(course, descrFormal, titleKwExtractor, descrKwExtractor)
+    #         print("Keywords complete for", subject)
+    #     except:
+    #         print("Unable to do keyword analysis in", subject)
 
-    with open("coursesWithKW.json", 'w') as outJSON:
-        outJSON.truncate(0)
-        json.dump(subjects, outJSON, indent=4)
+    # with open("coursesWithKW.json", 'w') as outJSON:
+    #     outJSON.truncate(0)
+    #     json.dump(subjects, outJSON, indent=4)

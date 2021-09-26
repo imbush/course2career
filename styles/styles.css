@@ -141,8 +141,36 @@ a {
   /* border: 1px solid black; */
 }
 
+.details-result {
+  width: 400px;
+  height: 550px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-description {
+  width: 56ch;
+  font-size: 13px;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.description .button {
+  margin-left: 15px;
+}
+
+.course-url {
+  margin-left: 250px;
+  color: #007ae9;
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 11px;
+}
+
 .fill,
 .course-result,
+.details-result,
 .cta {
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
 }
@@ -158,6 +186,19 @@ a {
   margin-right: 20px;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
+}
+
+.big-card-fill {
+  width: 400px;
+  height: 128px;
+  background: rgba(188, 209, 255, 1);
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  margin-right: 20px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .basic-info {
@@ -178,4 +219,56 @@ a {
   position: absolute;
   top: 20vh;
   left: 50vw;
+}
+
+.column-layout {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: 100vw;
+  height: 90vh;
+  padding: 0 50px;
+}
+
+.search-group {
+  position: absolute;
+  left: 50px;
+  top: 5vh;
+}
+
+.results {
+  position: absolute;
+  left: 50px;
+  bottom: 40vh;
+}
+
+.details {
+  position: absolute;
+  left: 550px;
+  top: 5vh;
+}
+
+.third {
+  position: absolute;
+  left: 1050px;
+  top: 5vh;
+}
+
+.third .button {
+  position: absolute;
+  left: 200px;
+  top: 75vh;
+}
+
+#added-courses p,
+.search-group p {
+  margin-bottom: 25px;
+}
+
+.search-group input {
+  margin-bottom: 25px;
+}
+
+.search-group .button {
+  margin-right: 10px;
 }

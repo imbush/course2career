@@ -93,6 +93,7 @@ nav ul div li {
 
 .text-field {
   padding-right: 10px;
+  cursor: text;
 }
 
 ul {
@@ -109,6 +110,7 @@ a {
   border-radius: 10px;
   padding: 10px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .ghost {
@@ -161,6 +163,15 @@ a {
 
 .description .button {
   margin-left: 15px;
+}
+
+.description .button, .description a {
+  position: absolute;
+  top: 470px;
+}
+
+.description a {
+  top: 480px;
 }
 
 .course-url {
@@ -246,7 +257,7 @@ a {
   top: 40vh;
 }
 
-.details {
+#details {
   position: absolute;
   left: 550px;
   top: 5vh;
@@ -261,6 +272,18 @@ a {
 .third .button {
   position: absolute;
   left: 200px;
+  top: 75vh;
+}
+
+.classBack {
+  position: absolute;
+  left: 200px;
+  top: 75vh;
+}
+
+#listings {
+  position: absolute;
+  left: 50px;
   top: 75vh;
 }
 

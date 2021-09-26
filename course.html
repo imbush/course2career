@@ -19,7 +19,6 @@
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <script src="./client.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,76 +46,36 @@
                 <p>Class Search</p>
                 <input type="text" class="ghost button text-field" placeholder="Course Name" id="courseSearchField" />
                 <div>
-                  <div class="ghost button">Clear</div>
+                  <div class="ghost button" onclick="clearStorage()">Clear</div>
                   <div class="fill button" id="searchButton" onclick="getCourse()">Search</div>
                 </div>
             </div>
 
             <div class="results">
               <div id="course-results">
-                <div class="course-result">
-                  <div class="micro-card-fill"></div>
-                  <div class="basic-info">
-                      <div>
-                          <span class="card-sub1">Subject</span>
-                          <span class="card-sub2">Course #</span>
-                      </div>
-                      <div>
-                          <p class="card-name">Name of Course</span>
-                      </div>
-                  </div>
-                </div>
+                <div></div>
+               <!-- Mini course cards for search results-->
               </div>
             </div>
         </div>
 
-        <div class="details">
-            <div class="details-result">
-                <div class="big-card-fill"></div>
-                <div class="basic-info">
-                    <div>
-                        <span class="card-sub1">Subject</span>
-                        <span class="card-sub2">Course #</span>
-                    </div>
-                    <div>
-                        <p class="card-name">Name of Course</span>
-                    </div>
-                    <div class="description">
-                        <p class="course-description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam, ante id fringilla semper. Augue auctor sem nisl diam porta habitant in morbi. Lobortis accumsan eget commodo elementum lorem tortor mattis. Urna enim, pellentesque convallis aliquet nec fames et. Elementum feugiat interdum mauris eu fringilla. Non tincidunt elit elementum nisi vel rhoncus nisi interdum. Interdum nec semper cursus phasellus hac eu amet pellentesque. Imperdiet mauris condimentum facilisi eu hendrerit eros, parturient. Aliquam mauris pulvinar vitae dui, felis. Viverra ut pharetra malesuada id mi lectus sem. In nunc tortor, sed in elit tincidunt in nullam nisl. Sed enim quis cras commodo.
-                        </p>
-                        <div class="fill button">Add</div>
-                        <a href="#" class="course-url">Read more 🡢</a>
-                    </div>
-                </div>
-            </div>
+        <div id="details">
+          <div></div>
         </div>
 
         <div class="third">
             <div id="added-courses">
               <p>Added Courses</p>
               <div id="added">
-                <div class="course-result">
-                    <div class="micro-card-fill"></div>
-                    <div class="basic-info">
-                        <div>
-                            <span class="card-sub1">Subject</span>
-                            <span class="card-sub2">Course #</span>
-                        </div>
-                        <div>
-                            <p class="card-name">Added Courses</span>
-                        </div>
-                    </div>
-                  </div>
               </div>
             </div>
 
             <div class="fill button">
-              <a href="jobs.html">Explore Job Opportunities!</a>
+              <a href="jobs.html" onclick="getJobs()">Explore Job Opportunities!</a>
             </div>
         </div>
     </div>
 
-    <script type="text/javascript" src="domUpdates.js"></script>
+    <script src="./client.js" crossorigin="anonymous"></script>
   </body>
 </html>

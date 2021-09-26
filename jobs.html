@@ -54,12 +54,12 @@
           <option value="full-time">Full-time</option>
           <option value="part-time">Part-time</option>
         </select>
-        <select name="location" id="location" class="ghost button text-field">
-          <option value="ithaca">Ithaca, NY</option>
-          <option value="rochester">Rochester, NY</option>
-          <option value="syracuse">Syracuse, NY</option>
-          <option value="rome">Rome, NY</option>
-          <option value="binghampton">Binghampton, NY</option>
+        <select name="location" id="location" class="ghost button text-field" id="dropDownId">
+          <option value="ithaca">Ithaca</option>
+          <option value="rochester">Rochester</option>
+          <option value="syracuse">Syracuse</option>
+          <option value="rome">Rome</option>
+          <option value="binghampton">Binghampton</option>
         </select>
       </div>
 
@@ -81,7 +81,7 @@
       </div>
     
 
-      <div class="details">
+      <div id="details">
           <div class="details-result">
               <div class="big-card-fill"></div>
               <div class="basic-info">
@@ -107,26 +107,20 @@
           <div id="added-courses">
             <p>Added Courses</p>
             <div id="added">
-              <div class="course-result">
-                  <div class="micro-card-fill"></div>
-                  <div class="basic-info">
-                      <div>
-                          <span class="card-sub1">Subject</span>
-                          <span class="card-sub2">Course #</span>
-                      </div>
-                      <div>
-                          <p class="card-name">Added Courses</span>
-                      </div>
-                  </div>
-                </div>
+              <div></div>
             </div>
           </div>
 
-          <div class="fill button">
+          <div class="fill button" id="listings" onclick="getJobs()">
+            Load Listings
+          </div>
+
+          <div class="fill button classBack">
             <a href="course.html">Back to Class Search</a>
           </div>
       </div>
     </div>
 
+    <script src="./client.js" crossorigin="anonymous"></script>
   </body>
 </html>

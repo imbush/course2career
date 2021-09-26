@@ -1,1 +1,4 @@
 google-cloud-talent
+careerjet_api
+yake
+flask

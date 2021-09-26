@@ -1,0 +1,22 @@
+{
+  "name": "course2career",
+  "version": "1.0.0",
+  "description": "Course2Career API packages for front end",
+  "main": "client.js",
+  "scripts": {
+    "test": "console.log(\"test\")"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Imbush/course2career/"
+  },
+  "keywords": [
+    "JavaScript",
+    "Frontend"
+  ],
+  "author": "Inle Bush, Ibrahim Ismail, Jan-Paul Ramos",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.4"
+  }
+}

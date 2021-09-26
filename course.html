@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="styles/styles.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Courses</title>
+  </head>
+  <body>
+    <nav class="divider">
+        <ul>
+          <div class="links">
+            <li class="nav-text"><a href="index.html">Home</a></li>
+            <li class="nav-text"><a href="course.html">Select Courses</a></li>
+          </div>
+  
+          <div>
+            <li class="ghost button">Sign In</li>
+            <li class="fill button">Sign Up</li>
+          </div>
+        </ul>
+    </nav>
+
+    <div class="column-layout">
+        <div>
+            <div class="search-group">
+                <p>Class Search</p>
+                <input type="text" class="ghost button text-field" placeholder="Course Name" id="courseSearchField" />
+                <div>
+                  <div class="ghost button" onclick="clearStorage()">Clear</div>
+                  <div class="fill button" id="searchButton" onclick="getCourse()">Search</div>
+                </div>
+            </div>
+
+            <div class="results">
+              <div id="course-results">
+                <div></div>
+               <!-- Mini course cards for search results-->
+              </div>
+            </div>
+        </div>
+
+        <div id="details">
+          <div></div>
+        </div>
+
+        <div class="third">
+            <div id="added-courses">
+              <p>Added Courses</p>
+              <div id="added">
+              </div>
+            </div>
+
+            <div class="fill button">
+              <a href="jobs.html" onclick="getJobs()">Explore Job Opportunities!</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./client.js" crossorigin="anonymous"></script>
+  </body>
+</html>

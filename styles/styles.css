@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: Roboto;
+}
+
+.card-name {
+  font-family: DM Serif Display;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.card-sub1,
+.card-sub2 {
+  font-family: Open Sans;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #6e798c;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+h1,
+.sub-heading {
+  color: white;
+}
+
+.sub-heading {
+  font-size: 24px;
+  width: 34ch;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: linear-gradient(rgba(84, 121, 255, 1), rgba(114, 189, 244, 1));
+  width: 100vw;
+  height: 90vh;
+  margin: 0;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+}
+
+.card-sub1 {
+  margin-right: 100px;
+}
+
+nav {
+  background-color: white;
+  font-size: 12px;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.divider {
+  border-bottom: 1px solid black;
+}
+
+nav ul,
+nav ul div {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-text a {
+  text-decoration: underline;
+  color: black;
+  font-size: 24px;
+}
+
+nav ul {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  margin: 0 auto;
+  position: fixed;
+  top: 2vh;
+  width: 100vw;
+}
+
+nav ul div li {
+  margin: 0 10px;
+}
+
+.text-field {
+  padding-right: 10px;
+  cursor: text;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ghost {
+  background: none;
+  border: 1px solid black;
+  color: black;
+}
+
+.cta {
+  background-color: white;
+  color: #547aff;
+  font-size: 24px;
+}
+
+.fill,
+.cta {
+  border: none;
+}
+
+.fill {
+  background-color: #547aff;
+  color: white;
+}
+
+.course-result,
+.job-result {
+  width: 400px;
+  height: 128px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  /* border: 1px solid black; */
+}
+
+.details-result {
+  width: 400px;
+  height: 550px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.details-result_ {
+  width: 400px;
+  height: 550px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-description {
+  width: 56ch;
+  font-size: 13px;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.job-description {
+  width: 56ch;
+  font-size: 13px;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.description .button {
+  margin-left: 15px;
+}
+
+.description .button, .description a {
+  position: absolute;
+  top: 470px;
+}
+
+.description a {
+  top: 480px;
+}
+
+.course-url {
+  margin-left: 250px;
+  color: #007ae9;
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.fill,
+.course-result,
+.job-result,
+.details-result,
+.details-result_,
+.cta {
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.micro-card-fill {
+  width: 120px;
+  height: 128px;
+  background: rgba(188, 209, 255, 1);
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  margin-right: 20px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.big-card-fill {
+  width: 400px;
+  height: 128px;
+  background: rgba(188, 209, 255, 1);
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  margin-right: 20px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.basic-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.content {
+  position: absolute;
+  top: 20vh;
+  left: 15vw;
+}
+
+.img {
+  width: 465px;
+  height: 465px;
+  position: absolute;
+  top: 20vh;
+  left: 50vw;
+}
+
+.column-layout {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: 100vw;
+  height: 90vh;
+  padding: 0 50px;
+}
+
+.search-group {
+  position: absolute;
+  left: 50px;
+  top: 5vh;
+}
+
+.results {
+  position: absolute;
+  left: 50px;
+  top: 40vh;
+}
+
+#details {
+  position: absolute;
+  left: 550px;
+  top: 5vh;
+}
+
+#details_ {
+  position: absolute;
+  left: 550px;
+  top: 5vh;
+}
+
+.third {
+  position: absolute;
+  left: 1050px;
+  top: 10vh;
+}
+
+.third .button {
+  position: absolute;
+  left: 200px;
+  top: 75vh;
+}
+
+.classBack {
+  position: absolute;
+  left: 200px;
+  top: 75vh;
+}
+
+#listings {
+  position: absolute;
+  left: 50px;
+  top: 75vh;
+}
+
+#added-courses p,
+.search-group p {
+  margin-bottom: 25px;
+}
+
+.search-group input {
+  margin-bottom: 25px;
+}
+
+.search-group .button {
+  margin-right: 10px;
+}

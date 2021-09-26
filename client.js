@@ -162,11 +162,8 @@ const getJobs = async () => {
 	console.log("test")
 	console.log(arrayOfValues)
 
-	// for every class
 	for(i=0; i<arrayOfValues.length; i++) {
 		_class=arrayOfValues[i]
-		console.log("this is class")
-		console.log(_class)
 
 		// const dropDown = document.getElementById('dropDownId')
 		// const dropDownValue = dropDown[dropDown.value].value
@@ -177,22 +174,10 @@ const getJobs = async () => {
 		)
 		.then(jobs => jobs.json())
 		console.log("this is string")
-		// console.log(JSON.stringify(jobs, null, 2))
-		
-		// going through jobs
-		for (i=0; jobs.length; i++) {
-			const jobs_=jobs[i]
-			const jobCard = card(jobs_["title"], jobs_["locations"], jobs_["company"]);
-			const bigJobCard= detailCard(jobs_["title"], jobs_["locations"], jobs_["company"], jobs_["description"], jobs_["url"])
-			const resultsContainer = document.getElementById("job-results");
-				resultsContainer.innerHTML += jobCard;
-				const detailContainer = document.getElementById("details");
-			detailContainer.innerHTML = bigJobCard;
-
-			console.log("Showing inner html of detail card");
-			console.log(detailContainer.innerHTML);
-		}
-		
+		console.log(JSON.stringify(jobs, null, 2))
+		const jobCard = card(jobs["title"], jobs["locations"], jobs["company"]);
+		const resultsContainer = document.getElementById("job-results");
+			resultsContainer.innerHTML += jobCard;
 	}
 	return jobs
 }

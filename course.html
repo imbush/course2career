@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="styles/styles.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <div class="links">
+          <li class="nav-text"><a href="index.html">Home</a></li>
+          <li class="nav-text"><a href="course.html">Select Courses</a></li>
+        </div>
+
+        <div>
+          <li class="text-field">
+            <input type="text" placeholder="Search for a course number" />
+          </li>
+          <li class="ghost button">Sign In</li>
+          <li class="fill button">Sign Up</li>
+        </div>
+      </ul>
+    </nav>
+
+    
+
+    <div class="column-layout">
+        <div>
+            <div>
+                <p>Class Search</p>
+                <input type="text" placeholder="Course Name" />
+                <div>
+                  <div class="ghost button">Clear</div>
+                  <div class="fill button">Search</div>
+                </div>
+            </div>
+            <div class="results">
+              <div id="course-results">
+                <div class="course-result">
+                  <div class="micro-card-fill"></div>
+                  <div class="basic-info">
+                      <div>
+                          <span class="card-sub1">Subject</span>
+                          <span class="card-sub2">Course #</span>
+                      </div>
+                      <div>
+                          <p class="card-name">Name of Course</span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="details"></div>
+
+        <div>
+            <div id="added-courses">
+              <p>Added Courses</p>
+              <div id="added"></div>
+            </div>
+            <div class="fill button">
+              <a href="jobs.html">Explore Job Opportunities!</a>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

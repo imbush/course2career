@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="styles/styles.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Listings</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <div class="links">
+          <li class="nav-text"><a href="index.html">Home</a></li>
+          <li class="nav-text"><a href="course.html">Select Courses</a></li>
+        </div>
+
+        <div>
+          <li class="ghost button text-field">
+            <input type="text" placeholder="Search for a course number" />
+          </li>
+          <li class="ghost button">Sign In</li>
+          <li class="fill button">Sign Up</li>
+        </div>
+      </ul>
+    </nav>
+
+    <div>
+      <p>Job Listings for Added Courses</p>
+      <input type="text" placeholder="Course Name" />
+      <div>
+        <div class="button">Clear</div>
+        <div class="button">Search</div>
+      </div>
+
+      <select name="date" id="date">
+        <option value="1">Last 24 Hours</option>
+        <option value="3">Last 3 days</option>
+        <option value="7">Last 7 days</option>
+        <option value="14">Last 14 days</option>
+      </select>
+
+      <select name="job-type" id="job-type">
+        <option value="full-time">Full-time</option>
+        <option value="part-time">Part-time</option>
+      </select>
+
+      <select name="location" id="location">
+        <option value="0">Exact location only</option>
+        <option value="10">Within 10 miles</option>
+        <option value="25">Within 25 miles</option>
+        <option value="50">Within 50 miles</option>
+        <option value="100">Within 100 miles</option>
+      </select>
+    </div>
+
+    <div class="results">
+      <div id="job-results"></div>
+    </div>
+
+    <div class="details"></div>
+
+    <div id="added-courses">
+      <p>Added Courses</p>
+      <div id="added"></div>
+    </div>
+
+    <div class="button"><a href="course.html">Back to Class Search</a></div>
+  </body>
+</html>

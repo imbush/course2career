@@ -10,7 +10,7 @@ We offer both an _**API**_ and a _**website user interface**_ that allows develo
 
 ## How we built it
 ### Backend
-The core of our app is offering course and job offering data in meaningful ways to our clients. To build the course database, we _**processed courses from the Cornell course roster API**_ from Fall 2019 to Winter 2021. We formatted this data into a single database we could offer through our API. To facilitate job search, we _**extracted keywords from courses titles and descriptions**_ using the YAKE Python library. _**To collect relevant job opportunity data, we used Careerjet’s public search AP**_. Careerjet API calls are done through their Python client on our Heroku hosted API. 
+The core of our app is offering course and job offering data in meaningful ways to our clients. To build the course database, we _**processed courses from the Cornell course roster API**_ from Fall 2019 to Winter 2021. We formatted this data into a single database we could offer through our API. To facilitate job search, we _**extracted keywords from courses titles and descriptions**_ using the YAKE Python library. _**To collect relevant job opportunity data, we used Careerjet’s public search API**_. Careerjet API calls are done through their Python client on our Heroku hosted API. 
 
 ### API
 Inle and Jan-Paul programmed the API in Python with Flask and hosted the API on Heroku using a domain.com domain name! _**The API offers 4 GET methods**_: get the course database, get a single course's info, get job listings matching keywords, and get a job listing matching the keywords of a specific course! We hosted our API on Heroku. 

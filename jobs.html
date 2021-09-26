@@ -34,59 +34,88 @@
         </div>
 
         <div>
-          <li>
-            <input
-              type="text"
-              class="ghost button text-field"
-              placeholder="Course Name"
-            />
-          </li>
           <li class="ghost button">Sign In</li>
           <li class="fill button">Sign Up</li>
         </div>
       </ul>
     </nav>
 
-    <div>
-      <p>Job Listings for Added Courses</p>
-      <input type="text" placeholder="Course Name" />
+    <div class="column-layout">
       <div>
-        <div class="button">Clear</div>
-        <div class="button">Search</div>
+        <p>Job Listings for Added Courses</p>
+        <input type="text" placeholder="Course Name" />
+        <div>
+          <div class="button">Clear</div>
+          <div class="button">Search</div>
+        </div>
+        <select name="date" id="date">
+          <option value="1">Last 24 Hours</option>
+          <option value="3">Last 3 days</option>
+          <option value="7">Last 7 days</option>
+          <option value="14">Last 14 days</option>
+        </select>
+        <select name="job-type" id="job-type">
+          <option value="full-time">Full-time</option>
+          <option value="part-time">Part-time</option>
+        </select>
+        <select name="location" id="location">
+          <option value="0">Exact location only</option>
+          <option value="10">Within 10 miles</option>
+          <option value="25">Within 25 miles</option>
+          <option value="50">Within 50 miles</option>
+          <option value="100">Within 100 miles</option>
+        </select>
       </div>
 
-      <select name="date" id="date">
-        <option value="1">Last 24 Hours</option>
-        <option value="3">Last 3 days</option>
-        <option value="7">Last 7 days</option>
-        <option value="14">Last 14 days</option>
-      </select>
-
-      <select name="job-type" id="job-type">
-        <option value="full-time">Full-time</option>
-        <option value="part-time">Part-time</option>
-      </select>
-
-      <select name="location" id="location">
-        <option value="0">Exact location only</option>
-        <option value="10">Within 10 miles</option>
-        <option value="25">Within 25 miles</option>
-        <option value="50">Within 50 miles</option>
-        <option value="100">Within 100 miles</option>
-      </select>
+      <div class="results">
+        <div id="job-results"></div>
+      </div>
     </div>
 
-    <div class="results">
-      <div id="job-results"></div>
+    <div class="details">
+        <div class="details-result">
+            <div class="big-card-fill"></div>
+            <div class="basic-info">
+                <div>
+                    <span class="card-sub1">Subject</span>
+                    <span class="card-sub2">Course #</span>
+                </div>
+                <div>
+                    <p class="card-name">Name of Course</span>
+                </div>
+                <div class="description">
+                    <p class="course-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam, ante id fringilla semper. Augue auctor sem nisl diam porta habitant in morbi. Lobortis accumsan eget commodo elementum lorem tortor mattis. Urna enim, pellentesque convallis aliquet nec fames et. Elementum feugiat interdum mauris eu fringilla. Non tincidunt elit elementum nisi vel rhoncus nisi interdum. Interdum nec semper cursus phasellus hac eu amet pellentesque. Imperdiet mauris condimentum facilisi eu hendrerit eros, parturient. Aliquam mauris pulvinar vitae dui, felis. Viverra ut pharetra malesuada id mi lectus sem. In nunc tortor, sed in elit tincidunt in nullam nisl. Sed enim quis cras commodo.
+                    </p>
+                    <div class="fill button">Add</div>
+                    <a href="#" class="course-url">Read more 🡢</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="details"></div>
+    <div class="third">
+        <div id="added-courses">
+          <p>Added Courses</p>
+          <div id="added">
+            <div class="course-result">
+                <div class="micro-card-fill"></div>
+                <div class="basic-info">
+                    <div>
+                        <span class="card-sub1">Subject</span>
+                        <span class="card-sub2">Course #</span>
+                    </div>
+                    <div>
+                        <p class="card-name">Added Courses</span>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
 
-    <div id="added-courses">
-      <p>Added Courses</p>
-      <div id="added"></div>
+        <div class="fill button">
+          <a href="course.html">Back to Class Search</a>
+        </div>
     </div>
-
-    <div class="button"><a href="course.html">Back to Class Search</a></div>
   </body>
 </html>

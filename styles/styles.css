@@ -154,7 +154,22 @@ a {
   flex-direction: column;
 }
 
+.details-result_ {
+  width: 400px;
+  height: 550px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
 .course-description {
+  width: 56ch;
+  font-size: 13px;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.job-description {
   width: 56ch;
   font-size: 13px;
   padding: 0 20px;
@@ -186,6 +201,7 @@ a {
 .course-result,
 .job-result,
 .details-result,
+.details-result_,
 .cta {
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
 }
@@ -263,10 +279,16 @@ a {
   top: 5vh;
 }
 
+#details_ {
+  position: absolute;
+  left: 550px;
+  top: 5vh;
+}
+
 .third {
   position: absolute;
   left: 1050px;
-  top: 5vh;
+  top: 10vh;
 }
 
 .third .button {

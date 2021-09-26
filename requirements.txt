@@ -1,5 +1,0 @@
-google-cloud-talent
-requests
-careerjet_api
-yake
-flask

@@ -1,4 +1,5 @@
 google-cloud-talent
-beautifulsoup4
 requests
-pymysql
+careerjet_api
+yake
+flask

@@ -23,17 +23,15 @@ def homePage():
 @app.route("/api/courses/", methods=["GET"])
 def getAllCourses():
     with open("coursesWithKW.json", 'r') as inJSON:
-        return json.dumps(inJSON), 200
+        return json.load(inJSON), 200
 
 @app.route("/api/posts/<subject>/<int:course_id>/", methods=["GET"])
 def get_course(subject, course_id):
     with open("coursesWithKW.json", 'r') as inJSON:
-        if not course.get(subject):
+        subjectDict = json.load(inJSON)
+        if not (subjectDict.get(subject) and subjectDict.get(subject)["courses"].get(course_id)):
             return json.dumps({"error": "Post not found"}), 404
-            
-    return json.dumps(posts.get(post_id)), 200
-
-    return json.dumps(inJSON), 200
+        return json.dumps(subjectDict.get(subject)["courses"].get(course_id)), 200
 
 @app.route("/api/posts/<int:post_id>/", methods=["DELETE"])
 def delete_post(post_id):

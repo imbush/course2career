@@ -1,5 +1,20 @@
 # course2career
+We offer both an _**API**_ and a _**website user interface**_ that allows developers and users to input Cornell courses and get job listings that build from the skills learned in those courses. This project was created for Big Red Hacks Hackathon 2021.
 
+## As of September 2021:
+The API could be found at [https://course2careerapi.herokuapp.com/](https://course2careerapi.herokuapp.com/) and  
+the website could be accessed at [https://c2cc2c.course2career.tech/](https://c2cc2c.course2career.tech/).
+
+# API Usage
+The API offers 4 GET commands:
+1. Get our course database:  
+`https://course2careerapi.herokuapp.com/api/courses/`
+2. Get a single course:  
+`https://course2careerapi.herokuapp.com/api/courses/<subject>/<course_id>/`
+3. Get Jobs matching keywords:  
+`https://course2careerapi.herokuapp.com/api/jobs/<location>/<[keywords]>/`
+4. Get Jobs matching a single course:  
+`https://course2careerapi.herokuapp.com/api/jobs/<location>/<subject>/<course_id>/`
 
 # Project Story
 ## Inspiration
@@ -19,7 +34,7 @@ Inle and Jan-Paul programmed the API in Python with Flask and hosted the API on 
 Our website was designed in Figma and developed with HTML, JavaScript, and CSS. We have three main pages: a home page, a page for users to enter, read about, and select courses, and a page to display the job listings we found. Calls to the API are done with JavaScript. We hosted our website on Github pages
 
 ### Design
-Together, we brainstormed our frontend design on notepads before drafting our UI design with Figma. _**Ibrahim created pixel-perfect mockups of webpages and components with Figma**_ that allowed us to showcase future features and code the website with a vision. Our designs can be seen in the attached documents!
+Together, we brainstormed our frontend design on notepads before drafting our UI design with Figma. _**Ibrahim created pixel-perfect mockups of webpages and components with Figma**_ that allowed us to showcase future features and code the website with a vision. 
 
 ## Challenges we ran into
 We searched for a long time to find either a good API or a database of job listings. Jan-Paul was hard at work testing out and signing up for various APIs at Indeed, Glass Door, etc. before we finally found the CareerJet public API which fit exactly what we needed!

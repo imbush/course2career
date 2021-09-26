@@ -1,6 +1,7 @@
 console.log('yup')
 
-const getCourse = async (string) => {
+const getCourse = async () => {
+	const string = document.getElementById('courseSearchField').value
 	const strUp = string.toUpperCase()
 	const numIdx = strUp.search(/\d/)
 	const course = strUp.slice(0, numIdx)
@@ -15,7 +16,6 @@ document.onload = () => {
 	const searchButton = document.getElementById('searchButton')
 	searchButton.addEventListener('click', () => {
 		console.log('FOCK')
-		const searchFieldValue = document.getElementById('courseSearchField').value
 		getCourse(searchFieldValue)
 	})
 }

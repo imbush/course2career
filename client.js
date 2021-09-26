@@ -175,9 +175,9 @@ const getJobs = async () => {
 		.then(jobs => jobs.json())
 		console.log("this is string")
 		console.log(JSON.stringify(jobs, null, 2))
-		const jobCard = card(jobs["title"], jobs["locations"], jobs["company"]);
-		const resultsContainer = document.getElementById("job-results");
-			resultsContainer.innerHTML += jobCard;
+		// const jobCard = card(jobs["title"], jobs["locations"], jobs["company"]);
+		// const resultsContainer = document.getElementById("job-results");
+		// 	resultsContainer.innerHTML += jobCard;
 	}
 	return jobs
 }

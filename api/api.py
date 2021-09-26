@@ -25,23 +25,16 @@ def getAllCourses():
     with open("coursesWithKW.json", 'r') as inJSON:
         return json.load(inJSON), 200
 
-@app.route("/api/posts/<subject>/<int:course_id>/", methods=["GET"])
+@app.route("/api/courses/<subject>/<int:course_id>/", methods=["GET"])
 def get_course(subject, course_id):
     with open("coursesWithKW.json", 'r') as inJSON:
         subjectDict = json.load(inJSON)
+        print(subjectDict.get(subject), subjectDict.get(subject)["courses"])
         if not (subjectDict.get(subject) and subjectDict.get(subject)["courses"].get(course_id)):
-            return json.dumps({"error": "Post not found"}), 404
+            return json.dumps({"error": "Course not found"}), 404
         return json.dumps(subjectDict.get(subject)["courses"].get(course_id)), 200
 
-@app.route("/api/posts/<int:post_id>/", methods=["DELETE"])
-def delete_post(post_id):
-    post = posts.get(post_id)
-    if not post:
-        return json.dumps({"error": "Post not found"}), 404
-    del posts[post_id]
-    return json.dumps(post), 200
-
-@app.route("/api/posts/<int:post_id>/comments/", methods=["GET"])
+@app.route("/api/courses/", methods=["GET"])
 def get_comments(post_id):
 
     
@@ -71,18 +64,6 @@ def create_comment(post_id):
     comment_id_counter += 1
     return json.dumps(response), 201
 
-@app.route("/api/posts/<int:post_id>/comments/<int:comment_id>/", methods=["POST"])
-def edit_comment(post_id, comment_id):
-    body = json.loads(request.data)
-    if not (comments.get(post_id) and comments.get(post_id).get(comment_id)):
-        return json.dumps({"error": "Could not find post or comment"}), 404
-    if not body.get("text"):
-        return json.dumps({"error": "Invalid request"})
-    comments[post_id][comment_id]["text"] = body.get("text")
-    response = comments[post_id][comment_id]
-    return json.dumps(response), 200
-
-
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(threaded=True, port=5000)

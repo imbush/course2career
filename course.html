@@ -26,24 +26,26 @@
     <title>Courses</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <div class="links">
-          <li class="nav-text"><a href="index.html">Home</a></li>
-          <li class="nav-text"><a href="course.html">Select Courses</a></li>
-        </div>
-
-        <div>
-          <li class="text-field">
-            <input type="text" placeholder="Search for a course number" />
-          </li>
-          <li class="ghost button">Sign In</li>
-          <li class="fill button">Sign Up</li>
-        </div>
-      </ul>
-    </nav>
-
-    
+    <nav class="divider">
+        <ul>
+          <div class="links">
+            <li class="nav-text"><a href="index.html">Home</a></li>
+            <li class="nav-text"><a href="course.html">Select Courses</a></li>
+          </div>
+  
+          <div>
+            <li>
+              <input
+                type="text"
+                class="ghost button text-field"
+                placeholder="Course Name"
+              />
+            </li>
+            <li class="ghost button">Sign In</li>
+            <li class="fill button">Sign Up</li>
+          </div>
+        </ul>
+      </nav>
 
     <div class="column-layout">
         <div>
@@ -55,6 +57,7 @@
                   <div class="fill button">Search</div>
                 </div>
             </div>
+
             <div class="results">
               <div id="course-results">
                 <div class="course-result">
@@ -80,6 +83,7 @@
               <p>Added Courses</p>
               <div id="added"></div>
             </div>
+
             <div class="fill button">
               <a href="jobs.html">Explore Job Opportunities!</a>
             </div>

@@ -23,12 +23,45 @@ body {
   font-size: 11px;
 }
 
+h1,
+.sub-heading {
+  color: white;
+}
+
+.sub-heading {
+  font-size: 24px;
+  width: 34ch;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: linear-gradient(rgba(84, 121, 255, 1), rgba(114, 189, 244, 1));
+  width: 100vw;
+  height: 90vh;
+  margin: 0;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+}
+
 .card-sub1 {
   margin-right: 100px;
 }
 
 nav {
   font-size: 12px;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.divider {
+  border-bottom: 1px solid black;
 }
 
 nav ul,
@@ -45,11 +78,20 @@ nav ul div {
 
 nav ul {
   justify-content: space-between;
+  align-items: center;
   padding: 0 10%;
+  margin: 0 auto;
+  position: fixed;
+  top: 2vh;
+  width: 100vw;
 }
 
 nav ul div li {
   margin: 0 20px;
+}
+
+.text-field {
+  padding-right: 10px;
 }
 
 ul {
@@ -74,11 +116,20 @@ a {
   color: black;
 }
 
-.fill {
+.cta {
+  background-color: white;
+  color: #547aff;
+  font-size: 24px;
+}
+
+.fill,
+.cta {
   border: none;
+}
+
+.fill {
   background-color: #547aff;
   color: white;
-  font-weight: 300;
 }
 
 .course-result {
@@ -91,7 +142,8 @@ a {
 }
 
 .fill,
-.course-result {
+.course-result,
+.cta {
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
 }
 
@@ -112,4 +164,18 @@ a {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
+}
+
+.content {
+  position: absolute;
+  top: 20vh;
+  left: 15vw;
+}
+
+.img {
+  width: 465px;
+  height: 465px;
+  position: absolute;
+  top: 20vh;
+  left: 50vw;
 }

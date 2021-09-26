@@ -1,6 +1,3 @@
-import axios from "axios";
-
-
 console.log('yup')
 
 const getCourse = async (string) => {
@@ -9,14 +6,19 @@ const getCourse = async (string) => {
 	const course = strUp.slice(0, numIdx)
 	const number = strUp.slice(numIdx)
 
-	const resp = await axios({
-		method: 'get',
-		baseURL: 'http://localhost:5000/api/courses/',
-		url: `${course}/${number}`
-	})
-	return resp.data
+	const resp = await fetch(`http://course2careerapi.herokuapp.com/api/jobs/Ithaca/${course}/${number}`)
+	.then(resp => resp.json())
+	return resp
 }
 
+document.onload = () => {
+	const searchButton = document.getElementById('searchButton')
+	searchButton.addEventListener('click', () => {
+		console.log('FOCK')
+		const searchFieldValue = document.getElementById('courseSearchField').value
+		getCourse(searchFieldValue)
+	})
+}
 /*Steps:
 
 1) get: course2careerapi.herokuapp.com/api/courses/<LETTERS>/<NUMBERS>

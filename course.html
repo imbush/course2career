@@ -19,7 +19,7 @@
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-
+    <script src="./client.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,10 +44,10 @@
         <div>
             <div class="search-group">
                 <p>Class Search</p>
-                <input type="text" class="ghost button text-field" placeholder="Course Name" />
+                <input type="text" class="ghost button text-field" placeholder="Course Name" id="courseSearchField" />
                 <div>
                   <div class="ghost button">Clear</div>
-                  <div class="fill button" id="search">Search</div>
+                  <div class="fill button" id="searchButton" onclick="getCourse('fock')">Search</div>
                 </div>
             </div>
 

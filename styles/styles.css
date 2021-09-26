@@ -51,6 +51,7 @@ h1,
 }
 
 nav {
+  background-color: white;
   font-size: 12px;
   height: 10vh;
   width: 100vw;
@@ -132,7 +133,8 @@ a {
   color: white;
 }
 
-.course-result {
+.course-result,
+.job-result {
   width: 400px;
   height: 128px;
   border-radius: 16px;
@@ -170,6 +172,7 @@ a {
 
 .fill,
 .course-result,
+.job-result,
 .details-result,
 .cta {
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);

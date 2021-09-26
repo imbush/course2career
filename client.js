@@ -7,7 +7,7 @@ const getCourse = async () => {
 	const course = strUp.slice(0, numIdx)
 	const number = strUp.slice(numIdx)
 
-	const resp = await fetch(`http://course2careerapi.herokuapp.com/api/jobs/Ithaca/${course}/${number}`)
+	const resp = await fetch(`http://course2careerapi.herokuapp.com/api/courses/${course}/${number}`)
 	.then(resp => resp.json())
 	return resp
 }
@@ -15,7 +15,7 @@ const getCourse = async () => {
 document.onload = () => {
 	const searchButton = document.getElementById('searchButton')
 	searchButton.addEventListener('click', () => {
-		console.log('FOCK')
+		console.log('I AM WORKING!')
 		getCourse(searchFieldValue)
 	})
 }

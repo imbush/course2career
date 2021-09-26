@@ -140,6 +140,7 @@ a {
   border-radius: 16px;
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
   /* border: 1px solid black; */
 }
 
@@ -242,7 +243,7 @@ a {
 .results {
   position: absolute;
   left: 50px;
-  bottom: 40vh;
+  top: 40vh;
 }
 
 .details {

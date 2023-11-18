@@ -1,6 +1,9 @@
 # course2career
 We offer both an _**API**_ and a _**website user interface**_ that allows developers and users to input Cornell courses and get job listings that build from the skills learned in those courses. This project was created for Big Red Hacks Hackathon 2021.
 
+## As of November 2023:
+Heroku took down their free website hosting service. The website and API are thus not currently being hosted.
+
 ## As of September 2021:
 The API could be found at [https://course2careerapi.herokuapp.com/](https://course2careerapi.herokuapp.com/) and  
 the website could be accessed at [https://c2cc2c.course2career.tech/](https://c2cc2c.course2career.tech/).
